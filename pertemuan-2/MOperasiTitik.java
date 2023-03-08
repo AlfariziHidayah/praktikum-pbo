@@ -1,3 +1,6 @@
+//MTitik.java 01/03/2023
+//Nama : Alfarizi Hidayah
+//Deskripsi :menjalankan kelas yang berisi operasi titik
 class MOperasiTitik{
 	public static void main(String[] args){
 		Titik t1 = new Titik(5.0,3.0);
