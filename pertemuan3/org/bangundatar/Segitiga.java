@@ -13,4 +13,7 @@ public class Segitiga extends Poligon {
     public double hitungluas(){
         return alas * tinggi / 2;
     }
+    public void printInfo(){
+        System.out.println("Banyak Sisi : " + jumlahSisi);
+    }
 }
