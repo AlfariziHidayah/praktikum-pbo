@@ -1,3 +1,8 @@
+/**
+ * FIle : Polion.java 08/03/2023
+ * Penulis : Alfarizi Hidayah
+ * Deskripsi : representasi dasar dari objek segitiga, turunan kelas poligon
+ */
 package org.bangundatar;
 
 import org.poligon.Poligon;
