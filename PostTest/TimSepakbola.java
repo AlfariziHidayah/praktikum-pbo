@@ -16,7 +16,11 @@ class TimSepakbola {
 
   // TimSepakbola(nama: string)
   // TODO: Create an overloading constructor below this comment
-  
+  TimSepakbola( String nama){
+    this.nama = nama;
+    this.skor = 0;
+    this.isOnMatch = false;
+  }
 
   // TODO: Fix the method below
   // Replace [TIM 1] and [TIM 2] with the correct attribute
@@ -24,7 +28,7 @@ class TimSepakbola {
   void startTandingBola(TimSepakbola lawan) {
     // DO NOT change both if conditions
     if (Boolean.TRUE.equals(this.isOnMatch)) {
-      System.out.println("Tim " + [TIM 1] + " sedang dalam pertandingan!");
+      System.out.println("Tim " + this.nama + " sedang dalam pertandingan!");
       return;
     }
 
@@ -34,7 +38,7 @@ class TimSepakbola {
     }
 
     System.out.println(
-      "Pertandingan antara " + [TIM 1] + " dan " + [TIM 2] + " dimulai!\n"
+      "Pertandingan antara " + this.nama + " dan " + lawan.nama + " dimulai!\n"
     );
     this.setIsOnMatch(true);
     lawan.setIsOnMatch(true);
@@ -49,7 +53,9 @@ class TimSepakbola {
       );
       return;
     }
-
+    else {
+      this.skor++;
+    }
   }
 
   // TODO: Implement getSkor() method. This is a selector to get the score for a team
@@ -61,12 +67,16 @@ class TimSepakbola {
       );
       return 0;
     }
+    else {
+      return this.skor;
+    }
 
   }
 
   // TODO: Implement setIsOnMatch() method. This is a mutator to set a new boolean value for isOnMatch
-  void setIsOnMatch(boolean onMatch) {
-    
+  
+  void setIsOnMatch(boolean isOnMatch) {
+    this.isOnMatch = isOnMatch;
   }
 
   // TODO: Fix the method below. This method below is quite similar with startTandingBola()
@@ -81,12 +91,16 @@ class TimSepakbola {
       System.out.println("Kedua tim TIDAK sedang dalam pertandingan");
       return;
     }
+    else{
+      this.skor = 0;
+      lawan.skor = 0;
+    }
 
     System.out.println(
       "\nPertandingan antara " +
-      [TIM 1] +
+      lawan.nama +
       " dan " +
-      [TIM 2] +
+      this.nama +
       " selesai!\n"
     );
     this.setIsOnMatch(false);
