@@ -1,3 +1,7 @@
+//MTimSepakbola.java 15/03/2023
+//Nama : Alfarizi Hidayah
+//Deskripsi :kelas yang berisi program utama yang memanfaatkan kelas TimSepakbola
+
 class MTimSepakbola {
   public static void main(String[] args) {
     // TODO: Make an instance called 'liverpool' -> use constructor which you have made before

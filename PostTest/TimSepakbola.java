@@ -1,3 +1,7 @@
+//TimSepakbola.java 15/03/2023
+//Nama : Alfarizi Hidayah
+//Deskripsi :kelas yang berisi program utama yang memanfaatkan kelas TimSepakbola
+
 class TimSepakbola {
 
   // Assume there are only 2 teams using this class!
