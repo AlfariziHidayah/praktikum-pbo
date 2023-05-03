@@ -16,7 +16,7 @@ class Mtitik
 
 		int counterTitik = t1.getCounterTitik();
 
-		System.out.println("Jumlah objek titik" + counterTitik);
+		System.out.println("Jumlah objek titik " + counterTitik);
 		System.out.println("t1("+t1.getAbsis() + "," + t1.getOrdinat() +")");
 		System.out.println("t2("+t2.getAbsis() + "," + t2.getOrdinat() +")");
 
